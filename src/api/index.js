@@ -73,7 +73,7 @@ export const reqUpdateCategory = ({categoryName, categoryDescription, categoryId
 export const reqAllCategorys = () => ajax('/category/getAllCategories')
 // 添加/修改商品
 export const reqAddOrUpdateProduct = (product) => ajax('/product/' + (product.pk_product_id ? 'updateProduct' : 'addProduct'), product, 'POST')
-// 获取商品分页列表
+// 获取商品列表
 export const reqProducts = () => ajax('/product/getAllProducts')
 // 更新商品的状态(上架/下架)
 export const reqUpdateStatus = (productId, status) => ajax('/product/updateStatus', {productId, status}, 'POST')

@@ -2,7 +2,9 @@
 import React, {Component} from "react";
 import {BrowserRouter, Switch, Route} from 'react-router-dom'
 // 引入组件，首字母必须大写
-import Home from './pages/home/home'
+import UserLogin from './pages/user_login/user_login'
+import Register from './pages/register/register'
+import Admin from './pages/admin/admin'
 import './assets/css/reset.css';
 import './assets/css/common.css';
 import './App.less';
@@ -13,8 +15,9 @@ export default class App extends Component {
     return (
       <BrowserRouter>
         <Switch>{/*只匹配其中一个*/}
-          <Route path='/Home' component={Home}/>
-          <Route path='/' component={Home}/>
+          <Route path='/UserLogin' component={UserLogin}/>
+          <Route path='/Register' component={Register}/>
+          <Route path='/' component={Admin}/>
         </Switch>
       </BrowserRouter>
     )

@@ -7,7 +7,6 @@ module.exports = {
       options: {
         lessLoaderOptions: {
           lessOptions: {
-            modifyVars: {'@primary-color': '#1DA57A'}, // 全局主色
             javascriptEnabled: true,
           },
         },
