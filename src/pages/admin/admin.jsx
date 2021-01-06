@@ -5,6 +5,7 @@ import {Layout} from 'antd';
 import Home from "../home/home";
 import List from "../list/list";
 import Detail from "../detail/detail";
+import Cart from "../cart/cart";
 import './admin.less';
 
 const {Header, Footer, Sider, Content} = Layout;
@@ -29,6 +30,7 @@ export default class Admin extends Component {
             <Route path='/home' component={Home}/>
             <Route path='/list' component={List}/>
             <Route path='/detail' component={Detail}/>
+            <Route path='/cart' component={Cart}/>
           </Switch>
         </Content>
       </Layout>
